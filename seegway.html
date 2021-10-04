@@ -1,0 +1,122 @@
+<?php
+session_start();
+if (!isset($_SESSION["theme"])) {
+	$_SESSION["theme"] = "main";
+}
+?>
+<HTML>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="main.css" id="theme-link">
+	</head>
+	<body>
+	<header> <!--- шапка сайта --->
+	<div class="logo"> <!--- лого --->
+		<a href= "index.php"><img src ="img/logo2.png" class="logo-img"></a>
+	</div>
+
+	<div class="filter"> <!--- фильтр по сайту  --->
+	<ul>
+ <li><a href="index.php">Главная</a></li>
+ <li><a href="gyro.html">Гироскутеры</a></li>
+ <li><a href="seegway.html">Сигвеи</a></li>
+ <li><a href="samokat.html">Электросамокаты</a></li>
+	</ul>
+</div>
+	<div class ="theme-button" id="theme-button">Сменить тему</div>
+	<div class="call">
+		<a href="tel:+7 351 111 22 33"><img src="img/call.png" alt="Звонок" class="zvonok"></a>
+		<p class="logo-title">+7 351 111 22 33</p>
+	</div>
+	</header>
+	<main class="main">
+		<article class="main_content">
+			<p><!--- lorem120 --></p>
+		</article>
+	</main>
+	<!-- блок слайдера -->
+  <div class="carousel-wrapper">
+    <span id="item-1"></span>
+    <span id="item-2"></span>
+    <span id="item-3"></span>
+		<span id="item-4"></span>
+    <!-- 1й элемент слайдера -->
+		<div class="bonus"> <!--- заголовок --->
+			<p>Преимущества нашей компании: </p>
+		</div>
+    <div class="carousel-item item-1">
+      <p>Мы обслуживаем одинаково качественно как своих гарантийных клиентов, так и сторонние заказы.</p>
+      <a class="arrow arrow-prev" href="#item-4"></a>
+      <a class="arrow arrow-next" href="#item-2"></a>
+    </div>
+    <!-- 2й элемент слайдера -->
+    <div class="carousel-item item-2">
+      <p>Если деталь сломалась — в нашем центре ее не будут ремонтировать, а сразу заменят на новую.</p>
+      <a class="arrow arrow-prev" href="#item-1"></a>
+      <a class="arrow arrow-next" href="#item-3"></a>
+    </div>
+    <!-- 3й элемент слайдера -->
+    <div class="carousel-item item-3">
+      <p>Мы работаем с крупной сетью сервисных центров, ее филиалы находятся в 70 городах России.</p>
+      <a class="arrow arrow-prev" href="#item-2"></a>
+      <a class="arrow arrow-next" href="#item-4"></a>
+    </div>
+		<div class="carousel-item item-4">
+			<p>Гарантия действует в течении 3 лет!</p>
+			<a class="arrow arrow-prev" href="#item-3"></a>
+			<a class="arrow arrow-next" href="#item-1"></a>
+		</div>
+  </div>
+<div class="wrapper">
+	<div class="content"> <!--- блок сайта, содержащий всю информацию --->
+		<div class="bonus">
+			<p> Особенности сигвеев: </p>
+			</div>
+		<div class="part">
+			<img class="img" src="img/tov4.png" alt="Сигвей">
+				<div class="po">
+					<p class="text">Сигвей - средство передвижения для одного человека, которое держит равновесие с помощью специальной автобалансирующей системы. Это своеобразный электрический скутер, самостоятельно удерживающий равновесие. Сигвеи бесшумны в работе, не загрязняют окружающую среду, работают на электрической энергии, накопленной батареей аккумуляторов.</p>
+			</div>
+		</div>
+				<div class="bonus">
+					<p><a name="seegway"> Раздел сигвеев: </a></p>
+				</div>
+				<div class="part-tovar">
+					<img class="img" src="img/tov3.png" alt="tovar3">
+						<div class="po">
+							<h1 class="zag">Minirobot Mini PRO 36V Белый</h1>
+							<p class="text">Цена данного сигвея: 15990руб.</p>
+						</div>
+				</div>
+				<div class="part-tovar">
+					<img class="img" src="img/tov4.png" alt="tovar4">
+						<div class="po">
+							<h1 class="zag">Xiaomi Ninebot Mini</h1>
+							<p class="text">Цена данного сигвея: 22900руб.</p>
+						</div>
+				</div>
+				<div class="part-tovar">
+					<img class="img" src="img/tov5.png" alt="tovar5">
+						<div class="po">
+							<h1 class="zag">Hili E+</h1>
+							<p class="text">Цена данного сигвея: 39900руб.</p>
+						</div>
+				</div>
+				<div class="text">
+<p>Вы можете подписаться на нашу email рассылку по кнопке ниже:</p>
+<p><strong>Ваше имя</strong></p> <!--- строки для заполнения --->
+<p><input maxlength="25" size="40" value=""></p>
+<p><strong>Ваш адрес эл. почты</strong></p>
+<p><input maxlength="40" size="40" value=""></p>
+</div>
+</div>
+<div class="sub"> <!--- кнопка подписки --->
+	<a href=""><img class="subscribe" src="img/subscribe.png" alt="подписка"></a>
+</div>
+			<a href="#" title="Вернуться к началу" class="topbutton">Наверх</a>
+		<div class="sidebar">
+		</div>
+</div>
+<script src="themes.js"></script>
+</body>
+</HTML>

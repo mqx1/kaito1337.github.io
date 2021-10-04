@@ -1,0 +1,117 @@
+<?php
+session_start();
+if (!isset($_SESSION["theme"])) {
+	$_SESSION["theme"] = "main";
+}
+?>
+<HTML>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="main.css" id="theme-link">
+	</head>
+	<body>
+	<header> <!--- шапка сайта --->
+	<div class="logo"> <!--- лого --->
+		<a href= "index.php"><img src ="img/logo2.png" class="logo-img"></a>
+	</div>
+
+	<div class="filter"> <!--- фильтр по сайту  --->
+	<ul>
+    <li><a href="index.php">Главная</a></li>
+    <li><a href="gyro.html">Гироскутеры</a></li>
+    <li><a href="seegway.html">Сигвеи</a></li>
+    <li><a href="samokat.html">Электросамокаты</a></li>
+	</ul>
+</div>
+	<div class ="theme-button" id="theme-button">Сменить тему</div>
+	<div class="call">
+		<a href="tel:+7 351 111 22 33"><img src="img/call.png" alt="Звонок" class="zvonok"></a>
+		<p class="logo-title">+7 351 111 22 33</p>
+	</div>
+	</header>
+	<main class="main">
+		<article class="main_content">
+			<p><!--- lorem120 --></p>
+		</article>
+	</main>
+	<!-- блок слайдера -->
+  <div class="carousel-wrapper">
+    <span id="item-1"></span>
+    <span id="item-2"></span>
+    <span id="item-3"></span>
+		<span id="item-4"></span>
+    <!-- 1й элемент слайдера -->
+		<div class="bonus"> <!--- заголовок --->
+			<p>Преимущества нашей компании: </p>
+		</div>
+    <div class="carousel-item item-1">
+      <p>Мы обслуживаем одинаково качественно как своих гарантийных клиентов, так и сторонние заказы.</p>
+      <a class="arrow arrow-prev" href="#item-4"></a>
+      <a class="arrow arrow-next" href="#item-2"></a>
+    </div>
+    <!-- 2й элемент слайдера -->
+    <div class="carousel-item item-2">
+      <p>Если деталь сломалась — в нашем центре ее не будут ремонтировать, а сразу заменят на новую.</p>
+      <a class="arrow arrow-prev" href="#item-1"></a>
+      <a class="arrow arrow-next" href="#item-3"></a>
+    </div>
+    <!-- 3й элемент слайдера -->
+    <div class="carousel-item item-3">
+      <p>Мы работаем с крупной сетью сервисных центров, ее филиалы находятся в 70 городах России.</p>
+      <a class="arrow arrow-prev" href="#item-2"></a>
+      <a class="arrow arrow-next" href="#item-4"></a>
+    </div>
+		<div class="carousel-item item-4">
+			<p>Гарантия действует в течении 3 лет!</p>
+			<a class="arrow arrow-prev" href="#item-3"></a>
+			<a class="arrow arrow-next" href="#item-1"></a>
+		</div>
+  </div>
+<div class="wrapper">
+	<div class="content"> <!--- блок сайта, содержащий всю информацию --->
+		<div class="bonus">
+			<p> Особенности гироскутеров:</p>
+			</div>
+		<div class="part">
+			<img class="img" src="img/tov1.png" alt="Гироскутер">
+				<div class="po">
+					<p class="text">Гироскутер представляет собой конструкцию из 2 колес, расположенных по бокам от наездника и соединенных поперечной планкой-корпусом. Внутри корпуса располагаются электродвигатели, аккумуляторные батареи и гироскопы, поддерживающие в горизонтальном положении площадку для ног.
+Гироскутеры никогда не оснащаются рукоятками для рук. Устройства из 2 колес, поперечной площадки и рулевого столба называются сигвеями и управляются манипуляциями руками.
+Особенность управления гироскутером состоит в том, что для движения вперед наезднику необходимо наклониться вперед. Для торможения или движения назад - наклониться назад. Для поворота нужно наклонять корпус в правую или левую сторону.</p>
+			</div>
+		</div>
+		<div class="bonus">
+			<p><a name="gyro"> Раздел гироскутеров: </a></p>
+		</div>
+		<div class="part-tovar"> <!--- части с товарами --->
+			<img class="img" src="img/tov1.png" alt="tovar1">
+				<div class="po">
+					<h1 class="zag">Smart Balance 6.5" Ver. 1</h1>
+					<div class="text">Цена данного гироскутера: 8990руб.</div>
+				</div>
+		</div>
+		<div class="part-tovar">
+			<img class="img" src="img/tov2.png" alt="tovar2">
+				<div class="po">
+					<h1 class="zag">KIWANO KO-X ES03</h1>
+					<p class="text">Цена данного гироскутера: 18900руб.</p>
+					</div>
+			</div>
+		</div>
+		<div class="text">
+<p>Вы можете подписаться на нашу email рассылку по кнопке ниже:</p>
+<p><strong>Ваше имя</strong></p> <!--- строки для заполнения --->
+<p><input maxlength="25" size="40" value=""></p>
+<p><strong>Ваш адрес эл. почты</strong></p>
+<p><input maxlength="40" size="40" value=""></p>
+</div>
+<div class="sub"> <!--- кнопка подписки --->
+	<a href=""><img class="subscribe" src="img/subscribe.png" alt="подписка"></a>
+</div>
+			<a href="#" title="Вернуться к началу" class="topbutton">Наверх</a>
+		<div class="sidebar">
+		</div>
+</div>
+<script src="themes.js"></script>
+</body>
+</HTML>
