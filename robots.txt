@@ -1,14 +1,11 @@
 User-agent:Yandex
 Dissallow: /Admin 
-Dissallow: https://kaito1337.github.io
-Sitemap:/ https://kaito1337.github.io/sitemap.xml
+Sitemap: https://kaito1337.github.io/sitemap.xml
 
 User-agent:googlebot
 Dissallow: /Admin
-Dissallow: https://kaito1337.github.io
-Sitemap:/ https://kaito1337.github.io/sitemap.xml
+Sitemap: https://kaito1337.github.io/sitemap.xml
 
 User-agent:*
 Dissallow: /Admin
-Dissallow: https://kaito1337.github.io
-Sitemap:/ https://kaito1337.github.io/sitemap.xml
+Sitemap: https://kaito1337.github.io/sitemap.xml
